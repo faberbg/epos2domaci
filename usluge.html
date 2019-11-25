@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8">
+
+  <meta name="description" content="Spasilacka sluzba">
+  <meta name="author" content="Matke i David">
+<title>Spasilacko Udruzenje | Usluge</title>
+<link rel="stylesheet" href="css/usluge.css" />
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="slike/usluge_bazeni.jpg"
+var image2=new Image()
+image2.src="slike/usluge_otvorene.jpg"
+var image3=new Image()
+image3.src="slike/usluge_mostovi.jpg"
+var image4=new Image()
+image4.src="slike/usluge_aqua.jpg"
+var image5=new Image()
+image5.src="slike/usluge_sportska.png"
+var image5=new Image()
+image5.src="slike/usluge_razno.png"//-->
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+	<div class="logo">
+		<a href="pocetna.html"><img class="kocka" src="slike/logo.png"></a>
+		
+	</div>
+
+	<div class="meni">
+	<a href="pocetna.html"><li class="active">Početna</li></a>
+	<a href="vesti.html"><li>Vesti</li></a>
+	<a href="usluge.html"><li>Usluge</li></a>
+	<a href="kontakt.html"><li>Kontakt</li></a>
+		
+	</div>
+
+
+<div class="kontakt">
+	<hr>
+	<div id="page-wrapper">
+		<div id="page">
+		<h1>Usluge<h1>
+		<p> Udruženje spasilaca na vodi Srbije se bavi pružanjem svih vrsta usluga spasilačkog obezbeđenja prema lokaciji,kupalištima ( u odnosu na specifične zahteve, uslove samih mesta,objekata) U tom smislu pružamo sledeće vrste usluga:</p>
+	<div id="slike_u">
+		<img src="slike/usluge_bazeni.jpg" name="slide" width="960" height="600" class="img-border" style="display:inline">
+		<script type="text/javascript">
+					<!--
+					
+					var step=1
+					function slideit(){
+					
+					if (!document.images)
+					return
+					document.images.slide.src=eval("image"+step+".src")
+					if (step<3)
+					step++
+					else
+					step=1
+					
+					setTimeout("slideit()",2500)
+					}
+					slideit()
+					//-->
+					</script>
+	</div>
+		<p>Kao udruženje koje uspešno radi već 10 godina, napominjemo da posedujemo sve kadrovske I tehničke resurse kao I kompletnu logističku podršku za
+		profesionalno obavljanje poslova spasilačkog obezbeđenja. Spasilačko obezbeđenje određene lokacije je prevashodno usmereno na prevenciju,zaštitu I 
+		bezbednost svih prisutnih učesnika. U slučaju potrebe za angažovanjem ili bilo kojim vidom saradnje možete nas
+		kontaktirati<b><a href="kontakt.html">OVDE</a><b></p> 
+		</div>
+    </div>
+	<hr>
+	
+	<div class="footer"><p>Copyright © 2019 All rights reserved. </p></div>
+</div>
+
+
+
+
+</div>
+
+<a href="#" class="na-vrh">Nazad na vrh stranice</a>
+<script>
+		$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.na-vrh').fadeIn(200);
+				} else {
+					$('.na-vrh').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.na-vrh').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+
+</body>
+</html>

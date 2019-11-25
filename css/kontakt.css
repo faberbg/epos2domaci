@@ -1,0 +1,181 @@
+body {
+
+  background: #ee1c1f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.logo{
+	grid-area: logo;
+	 background: #ee1c1f;
+}
+.kocka{
+	float:left;
+	height:65px;
+}
+
+.meni{
+	grid-area: meni;
+	 background: #ee1c1f;
+}
+
+.sadrzaj{
+	grid-area: sadrzaj;
+}
+.mapa{
+	grid-area: mapa;
+	height: 390px;
+    width: 100%;
+	
+	
+}
+.container{
+	
+	margin-top: 3%;
+	
+}
+
+#kontaktlevo {
+	float:left;
+	font-size:17px;
+	overflow: hidden;
+	width: 300px;
+	margin-left:30px;
+	padding-top: 50px;
+	color: #222222;
+	 border-radius: 25px;
+  background: #d2d4d2;
+  padding: 20px;
+	
+}
+#kontaktlevo h2{
+	padding: 0px 0px 20px 0px;
+	letter-spacing: -1px;
+	font-size: 32px;
+	color: #222222;
+}
+#kontaktdesno {
+	float:right;
+	overflow: hidden;
+	width: 400px;
+	margin:30px 30px;
+	padding-top: 50px;
+	color: #222222;
+	 border-radius: 25px;
+  background: #d2d4d2;
+  padding: 20px;
+	
+}
+#kontaktdesno p{
+	font-size:18px;
+}
+
+#kontaktdesno a{
+	color:#ee1c1f;
+	text-decoration:none;
+	font-size:16px;
+}
+
+
+
+
+.footer {
+  grid-area: footer;
+    background-color: #ee1c1f;
+}
+.footer p{
+	text-align:center;
+	color:white;
+}
+
+
+.wrapper > div {
+
+  text-align: center;
+  
+  
+}
+
+
+.wrapper {
+        display: grid;
+		width:100%;
+		grid-gap: 1px;
+        grid-template-columns: 35% 35% 30%;
+        grid-template-areas:
+		"logo meni meni"
+		"mapa mapa mapa"
+        "sadrzaj sadrzaj sadrzaj"
+        "footer  footer  footer";
+        
+        color: #444;
+    }
+
+
+     // MENI
+	 
+.meni {
+width: 750px;
+height: 25px;
+background-color: #ee1c1f;
+}
+.meni a {
+font-size: 20px; /* veličina teksta */
+color: #EFECCA; /*  kod za odredjenu nijansu žute boje */
+}
+.meni a li {
+float:left; /* svi elementi se redjaju jedan do drugog, po levoj strani */
+width: 200px; /* dužina elementa */
+height: 40px; /* širina elementa */ 
+list-style: none;
+padding-top: 15px;
+text-align: center;
+
+}
+.meni a li:hover {
+background-color: #C00; /* odredjena nijansa tamno plave boje */
+}
+
+	//LOGO
+	
+.logo {                       
+	float: left;
+	width: 150px;
+	height: 100px;
+	padding: 0px 0px 0px 20px;
+}
+.logo img{
+	
+}
+
+
+.logo p {
+	color:#fff;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing:1px;
+	font-size:20px;
+	
+	
+	
+}
+
+.logo  a {
+	text-decoration: none;
+	color: #FFFFFF;
+}  
+
+.na-vrh {
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px; 
+	text-decoration: none; 
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 15px;
+}
+.na-vrh:hover {
+    background-color:  rgba(0, 0, 0, 0.5); 
+}
+
+	
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+  <meta charset="utf-8">
+   <meta name="description" content="Spasilacka sluzba">
+  <meta name="author" content="Matke i David">
+  <title>Spasilacko Udruzenje</title>
+  <link href="css/style.css "rel="stylesheet">
+
+<script scr="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="skripte/skripta.js"></script>
+
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="slike/header1.jpg"
+var image2=new Image()
+image2.src="slike/header2.jpg"
+var image3=new Image()
+image3.src="slike/header3.jpg"
+var image4=new Image()
+image4.src="slike/header4.jpg"
+var image5=new Image()
+image5.src="slike/header5.png"//-->
+</script>
+</head>
+<body>
+
+
+
+
+
+<div class="wrapper">
+
+	<div class="logo">
+		<a href="pocetna.html"><img class="kocka" src="slike/logo.png"></a>
+		
+	</div>
+
+	<div class="meni">
+	<a href="pocetna.html"><li class="active">Početna</li></a>
+	<a href="vesti.html"><li>Vesti</li></a>
+	<a href="usluge.html"><li>Usluge</li></a>
+	<a href="kontakt.html"><li>Kontakt</li></a>
+		
+	</div>
+
+	<div class="header">
+		<img src="slike/header1.jpg" name="slide" width="960" height="600" class="img-border" style="display:block">
+		<script type="text/javascript">
+		<!--
+		
+		var step=1
+		function slideit(){
+		
+		if (!document.images)
+		return
+		document.images.slide.src=eval("image"+step+".src")
+		if (step<3)
+		step++
+		else
+		step=1
+		
+		setTimeout("slideit()",2500)
+		}
+		slideit()
+		//-->
+		</script></div>
+	
+	</div>
+	
+ 
+	<div class="content">
+		<h2>Dobro dosli u Udruzenje Spasilaca<h2>
+					<p> Udruzenje Spasilaca je nevladino neprofitno udruženje osnovano 2064. godine u Beogradu, koje ima za cilj okupljanje 
+					spasilaca i ostalih zainteresovanih lica radi unapređenja oblasti spasavanja na vodi. Naše Udruženje sa bavi obukom i usavršavanjem
+					spasilaca na vodi, praćenjem najnovijih stručnih i tehničkih dostignuća u oblasti spasavanja na vodi i informisanjem o tome, saradnjom sa 
+					sličnim organizacijama u zemlji i inostranstvu. Devetogodišnje iskustvo u ovom segmentu poslovanja, kroz više stotina uspešnih
+					intervencija, gde je spaseno na desetine lica, svrstalo je ovu organizaciju u jednu od najboljih ako ne i najbolje spasilačko udruženje u 
+					regionu i to bez ijednog slučaja utapanja na plažama na kojima su naši članovi bili angažovani.Spasavanje iz vode predstavlja vrlo 
+					rizičnu, kompleksnu i opasnu aktivnost. Ovo su dramatične situacije za unesrećenog, ali i za samog spasioca. Stoga samo dobro i stručno 
+					obučeni spasioci, koji poseduju dobru fizičku kondiciju, mogu da se upuštaju u akcije spasavanja iz vode. Nastavni program Udruženja je, 
+					stoga, koncipiran prema standardima Međunarodne federacije spasavanja na vodi (ILS), organizacije koja okuplja spasilačke službe iz celog
+					sveta.</p>
+	
+	
+	</div>
+	<hr>
+	<div class="sidebar">
+		
+				<form><table>
+				<tbody><tr><th>Na kakvom tipu kupališta najviše volite da provodite leto?</th></tr>
+				<tr><td><input type="radio" name="pitanje" id="bazen">
+					<label for="pitanje">Bazen</label></td></tr>
+				<tr><td><input type="radio" name="pitanje" id="jezero">
+					<label for="pitanje">Jezero</label></td></tr>
+				<tr><td><input type="radio" name="pitanje" id="more">
+					<label for="pitanje">Morska plaža</label></td></tr>
+				<tr><td><input type="radio" name="pitanje" id="drugo">
+					<label for="pitanje">Neko drugo</label></td></tr>
+					<tr></tr><tr></tr>
+				<tr><td><span id="spAnketa"></span>	</td></tr>
+					<tr><td align="center"> <input type="button" class="button-style" id="btnGlasaj" value="Glasaj" onclick="anketa();"></td></tr>
+				</tbody></table></form>
+		
+	</div>
+  
+  <div class="footer"><p>Copyright © 2019 All rights reserved. </p></div>
+  
+</div>
+
+<a href="#" class="na-vrh">Nazad na vrh stranice</a>
+<script>
+		$(document).ready(function() {
+			
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.na-vrh').fadeIn(200);
+				} else {
+					$('.na-vrh').fadeOut(200);
+				}
+			});
+			
+			
+			$('.na-vrh').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+
+
+
+
+</body>
+
+</html>

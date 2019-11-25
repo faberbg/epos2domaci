@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+ <meta name="description" content="Spasilacka sluzba">
+  <meta name="author" content="Matke i David">
+  <title>Spasilacko Udruzenje | Vesti</title>
+  <link href="css/vesti.css "rel="stylesheet">
+  
+</head>
+
+<body>
+
+
+<div class="wrapper">
+	
+	<div class="logo">
+		<a href="pocetna.html"><img class="kocka" src="slike/logo.png"></a>
+		
+	</div>
+
+	<div class="meni">
+	<a href="pocetna.html"><li class="active">Početna</li></a>
+	<a href="vesti.html"><li>Vesti</li></a>
+	<a href="usluge.html"><li>Usluge</li></a>
+	<a href="kontakt.html"><li>Kontakt</li></a>
+		
+	</div>
+
+
+
+
+	<div class="vesti">
+	<hr>
+		
+		<div class="blok">
+			<div id="naslov_vesti">
+			<h3>Spasilačka obuka April &nbsp;2064. Beograd</h3></div>
+			<img src="slike/obuka.jpg" width="300px" height="200px">
+			<p>Obaveštavamo sve zainteresovane kandidate da će naredna spasilačka obuka prvog stepena biti održana od 05.04.2064. do 26.04.2064. godine na bazenu sportskog
+			centra 11 April u Beogradu. Ulazni test se može uraditi najkasnije do 01.04.2064 Prijave se mogu vršiti svakog dana na telefone:<br>060/99-99-999  <br> ili putem e-maila...<a href="kontakt.html" style="color:#ee1c1f;"><b>PRIJAVI SE</b></a></p>
+		</div>
+		<div class="blok">
+			<div id="naslov_vesti"><h3>Spasilačka obuka na brzim vodama 2064.</h3></div>
+			<img src="slike/splavarenje.jpg" width="300px" height="200px">
+			<p>Obaveštavamo sve naše spasioce da će naredna spasilačka obuka na brzim vodama biti održana od 03.05 - 04.05.2064. god. na planini DzimDzim.
+			Polazak je 02.05.2064. uveče,a povratak je 04.05. u večernjim časovima. Obuku mogu da pohađaju samo punoletni 
+			članovi.Prijave se mogu vršiti svakog dana na 
+			telefone<br>060/99-99-999 <br> ili putem e-maila...<a href="kontakt.html" style="color:#ee1c1f;"><b>PRIJAVI SE</b></a></p>
+		</div>
+			<div class="blok">
+			<div id="naslov_vesti"><h3>Spasilačka obuka Mart &nbsp;2064. Beograd</h3></div>
+			<img src="slike/beograd.jpg" width="300px" height="200px">
+			<p>Obaveštavamo sve zainteresovane kandidate da će naredna spasilačka obuka prvog stepena biti održana od 01.03.2063. do 09.03.2063.
+			godine u saradnji sa skolom za nadarenu decu "Systempro" u Beogradu. Prijave se mogu vršiti svakog dana na telefone:<br>060/99-99-999 <br> ili putem e-maila...<a href="kontakt.html" style="color:#ee1c1f;"><b>PRIJAVI SE</b></a></p>
+			</div>
+			<hr>
+	</div>
+
+<div class="footer"><p>Copyright © 2019 All rights reserved. </p></div>
+
+</div>
+
+<a href="#" class="na-vrh">Nazad na vrh stranice</a>
+<script>
+		$(document).ready(function() {
+			
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.na-vrh').fadeIn(200);
+				} else {
+					$('.na-vrh').fadeOut(200);
+				}
+			});
+			
+			
+			$('.na-vrh').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+
+
+
+
+</body>
+</html>
